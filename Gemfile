@@ -1,4 +1,6 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in ahn-activerecord.gemspec
+gem 'adhearsion', :git => 'git://github.com/adhearsion/adhearsion.git', :branch => :develop
+
+# Specify your gem's dependencies in adhearsion-activerecord.gemspec
 gemspec

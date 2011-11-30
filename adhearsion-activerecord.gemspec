@@ -1,18 +1,18 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 
-require "ahn_activerecord/version"
+require "adhearsion/activerecord/version"
 
 Gem::Specification.new do |s|
-  s.name        = "ahn-activerecord"
-  s.version     = AhnActiveRecord::VERSION
+  s.name        = "adhearsion-activerecord"
+  s.version     = Adhearsion::ActiveRecord::VERSION
   s.authors     = ["juandebravo", "Ben Langfeld"]
   s.email       = ["juandebravo@gmail.com", "ben@langfeld.me"]
   s.homepage    = ""
   s.summary     = %q{This gem provides an Adhearsion plugin to handle the ActiveRecord and database integration}
   s.description = %q{This gem provides an Adhearsion plugin to handle the ActiveRecord and database integration}
 
-  s.rubyforge_project = "ahn-activerecord"
+  s.rubyforge_project = "adhearsion-activerecord"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
