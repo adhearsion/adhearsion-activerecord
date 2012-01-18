@@ -1,7 +1,8 @@
-ahn-activerecord
+adhearsion-activerecord
+
 ================
 
-ahn-activerecord is an Adhearsion Plugin providing ActiveRecord compatibility.
+adhearsion-activerecord is an Adhearsion Plugin providing ActiveRecord compatibility.
 
 Features
 --------
@@ -16,7 +17,7 @@ Requirements
 Install
 -------
 
-Add `ahn-activerecord` to your Adhearsion app's Gemfile.
+Add `adhearsion-activerecord` to your Adhearsion app's Gemfile.
 
 Configuration
 -------------
@@ -24,7 +25,7 @@ Configuration
 In your Adhearsion app configuration file, add the following values:
 
 ```ruby
-Adhearsion.config[:ahn_activerecord] do |config|
+Adhearsion.config[:adhearsion_activerecord] do |config|
   config.username = "db-user"
   config.password = "db-password"
   config.database = "database-id"
@@ -41,9 +42,9 @@ Original author: [Juan de Bravo](https://github.com/juandebravo)
 
 Links
 -----
-* [Source](https://github.com/adhearsion/ahn-xmpp)
-* [Documentation](http://rdoc.info/github/adhearsion/ahn-xmpp/master/frames)
-* [Bug Tracker](https://github.com/adhearsion/ahn-xmpp/issues)
+* [Source](https://github.com/adhearsion/adhearsion-activerecord)
+* [Documentation](http://rdoc.info/github/adhearsion/adhearsion-activerecord/master/frames)
+* [Bug Tracker](https://github.com/adhearsion/adhearsion-activerecord/issues)
 
 Note on Patches/Pull Requests
 -----------------------------
@@ -58,4 +59,4 @@ Note on Patches/Pull Requests
 Copyright
 ---------
 
-Check [License file](https://github.com/adhearsion/ahn-xmpp/blob/master/LICENSE)
+Check [License file](https://github.com/adhearsion/adhearsion-activerecord/blob/master/LICENSE)
