@@ -32,7 +32,7 @@ describe Adhearsion::ActiveRecord::Plugin::Service do
 
     it "should raise an exception when no adapter has been configured" do
       Adhearsion.config[:adhearsion_activerecord].adapter = nil
-      lambda {Adhearsion::Plugin.load}.should raise_error "Must supply an adapter argument to the ActiveRecord configuration"
+      lambda { Adhearsion::Plugin.init_plugins }.should raise_error "Must supply an adapter argument to the ActiveRecord configuration"
     end
 
     it "establishes the connection with the not nil config values as options" do
