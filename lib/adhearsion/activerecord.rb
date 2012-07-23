@@ -1,4 +1,6 @@
 require "adhearsion"
+require 'active_record'
+
 require "active_support/dependencies/autoload"
 
 require "adhearsion/activerecord/version"
