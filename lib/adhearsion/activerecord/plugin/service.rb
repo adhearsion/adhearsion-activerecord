@@ -9,7 +9,7 @@ module Adhearsion
           def start
             raise "Must supply an adapter argument to the ActiveRecord configuration" if (config.adapter.nil? || config.adapter.empty?)
 
-            params = config.__values.select { |k,v| !v.nil? }
+            params = config.to_hash.select { |k,v| !v.nil? }
 
             require_models(*params.delete(:model_paths))
             establish_connection params
