@@ -29,7 +29,11 @@ module Adhearsion
 
           def create_call_hook_for_connection_cleanup
             Adhearsion::Events.punchblock Punchblock::Event::Offer  do
-              ::ActiveRecord::Base.verify_active_connections!
+              if ::ActiveRecord::VERSION::MAJOR >= 4
+                ::ActiveRecord::Base.connection_pool.connections.map(&:verify!)
+              else
+                ::ActiveRecord::Base.verify_active_connections!
+              end
             end
           end
 
